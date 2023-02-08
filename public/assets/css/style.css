@@ -1,0 +1,10 @@
+body{
+  background-color: white;  
+  color: rgb(0, 0, 61);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+max-width: 800px;
+padding: 0 20px;
+margin: 0 auto;
+}
