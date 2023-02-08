@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,13 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <div class="container ">
         <h1>Новые статьи</h1>
+        <?php foreach ($posts as $post) : ?>
+            <?= $post; ?>
+        <?php endforeach ?>
         <article>
             <h2><a href="/posts/first-post">Первый пост</a></h2>
             <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Маленький журчит имени он страна ipsum мир продолжил запятых своих.</p>
@@ -28,4 +33,5 @@
     </div>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
