@@ -29,14 +29,15 @@ Route::get('/', function () {
             $document->excerpt,
             $document->date,
             $document->body(),
+            $document->slug,
         );
     }
-    ddd($posts);
 
 
-    // return view('posts', [
-    //     'posts' => Post::all()
-    // ]);
+
+    return view('posts', [
+        'posts' => $posts
+    ]);
 });
 
 Route::get('posts/{post}', function ($slug) {
